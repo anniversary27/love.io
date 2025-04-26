@@ -1,0 +1,105 @@
+/* Styling untuk canvas Three.js */
+#three-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Styling untuk galeri bulan */
+.month-item {
+    margin-bottom: 2rem;
+    padding: 3rem;
+    border-radius: 50px;
+
+}
+
+.month-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.month-image {
+    width: fit-content;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    cursor: grab;
+}
+
+.month-image:hover {
+    transform: scale(1.05);
+}
+
+/* Styling umum untuk section */
+.section {
+    min-height: 100vh;
+    padding: 80px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Styling untuk navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #00000088;
+    z-index: 10;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    margin-right: auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff69b4;
+}
+
+/* Container untuk galeri bulan */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.em {
+    font-size: x-small;
+}
